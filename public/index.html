@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Calvaroz official Roblox clan website">
+<title>CALVAROZ // OFFICIAL CLAN WEBSITE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="fxCanvasWrap"><canvas id="fxCanvas"></canvas></div>
+<div class="bg-grid"></div>
+<div class="bg-vignette"></div>
+<div class="scanlines"></div>
+<div class="noise"></div>
+<div class="red-beam beam-a"></div>
+<div class="red-beam beam-b"></div>
+<div id="pageTransition" class="page-transition">
+  <div class="transition-ring"></div>
+  <div class="transition-core"></div>
+  <span>CALVAROZ // SYSTEM TRANSFER</span>
+</div>
+
+<header class="topbar">
+  <a id="brandLink" href="#" class="brand" target="_blank" rel="noopener" aria-label="Open Calvaroz Roblox group">
+    <span class="brand-logo"><img src="assets/img/calvaroz-logo.png" alt="Calvaroz"></span>
+    <span class="brand-copy"><b id="brandName">CALVAROZ</b><small>OFFICIAL CLAN HQ</small></span>
+  </a>
+  <nav id="desktopMenu" class="desktop-menu"></nav>
+  <button id="mobileMenuBtn" class="mobile-menu-btn" type="button" aria-label="Open menu"><i></i><i></i><i></i></button>
+</header>
+<aside id="mobileMenu" class="mobile-menu"></aside>
+
+<main id="app">
+<section id="home" class="page">
+  <div class="hero-shell">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="live-dot"></span> OFFICIAL ROBLOX COMMUNITY <span class="eyebrow-line"></span> LIVE DATABASE</div>
+      <h1 id="heroTitle">CALVAROZ</h1>
+      <div id="heroTagline" class="hero-tagline">BUILD. FIGHT. DOMINATE.</div>
+      <p id="heroDescription">The official Calvaroz headquarters. Explore command structure, ranks, medals, uniforms, player records and restricted personnel data.</p>
+      <div class="hero-actions">
+        <a href="#organization" class="btn btn-red page-link">ENTER HEADQUARTERS <b>→</b></a>
+        <a id="heroGroupButton" href="#" class="btn btn-outline" target="_blank" rel="noopener">ROBLOX GROUP ↗</a>
+      </div>
+      <div class="hero-stats">
+        <div><b id="heroMemberCount">—</b><span>GROUP MEMBERS</span></div><em></em>
+        <div><b id="heroLiveLabel">LIVE</b><span>DATABASE STATUS</span></div><em></em>
+        <div><b id="heroRankCount">—</b><span>GROUP RANKS</span></div>
+      </div>
+    </div>
+
+    <div class="hero-emblem">
+      <a id="heroLogoLink" href="#" target="_blank" rel="noopener" aria-label="Open Calvaroz Roblox group">
+        <span class="emblem-ring ring-1"></span>
+        <span class="emblem-ring ring-2"></span>
+        <span class="emblem-pulse"></span>
+        <img src="assets/img/calvaroz-logo.png" alt="Calvaroz eagle logo">
+      </a>
+      <div class="emblem-label label-top">CVZ // 34922741</div>
+      <div class="emblem-label label-bottom">AUTHENTICATED COMMUNITY</div>
+    </div>
+  </div>
+
+  <div class="system-strip">
+    <span><i></i> GROUP CONNECTION</span><b id="connectionStatus">CONNECTING</b>
+    <span><i></i> MEMBER COUNT</span><b id="memberUpdateTime">SYNCING</b>
+    <span><i></i> RANK SOURCE</span><b>ROBLOX GROUP</b>
+  </div>
+
+  <div class="home-panels">
+    <button class="home-panel page-link" data-page="organization"><span>01</span><b>ORGANIZATION</b><small>COMMAND • DEPARTMENT • DIVISION</small><i>→</i></button>
+    <button class="home-panel page-link" data-page="ranks"><span>02</span><b>RANK SYSTEM</b><small>LIVE ROBLOX GROUP ROLES</small><i>→</i></button>
+    <button class="home-panel page-link" data-page="medals"><span>03</span><b>MEDALS</b><small>HONORS • AWARDS • MERIT</small><i>→</i></button>
+    <button class="home-panel page-link" data-page="uniforms"><span>04</span><b>UNIFORMS</b><small>SHIRT • PANTS • RANK</small><i>→</i></button>
+    <button class="home-panel page-link" data-page="search"><span>05</span><b>PLAYER SEARCH</b><small>VERIFY • PROFILE • REQUIREMENTS</small><i>→</i></button>
+    <button class="home-panel page-link" data-page="blacklist"><span>06</span><b>BLACKLIST</b><small>RESTRICTED PERSONNEL RECORDS</small><i>→</i></button>
+  </div>
+</section>
+
+<section id="organization" class="page">
+  <div class="page-head"><div><span class="page-number">01</span><small>COMMAND STRUCTURE</small><h2>ORGANIZATION</h2></div><p>COMMAND • DEPARTMENT • DIVISION</p></div>
+  <div id="organizationContent" class="organization-wrap"></div>
+</section>
+
+<section id="ranks" class="page">
+  <div class="page-head"><div><span class="page-number">02</span><small>ROBLOX GROUP ROLES</small><h2>RANKS</h2></div><p>LIVE ORDER • CP • REQUIREMENTS</p></div>
+  <div id="rankSyncNotice" class="sync-notice">SYNCING LIVE GROUP ROLES...</div>
+  <div id="rankContent" class="rank-list"></div>
+</section>
+
+<section id="medals" class="page">
+  <div class="page-head"><div><span class="page-number">03</span><small>HONORS & AWARDS</small><h2>MEDALS</h2></div><p>MERIT • SERVICE • ACHIEVEMENT</p></div>
+  <div id="medalContent" class="medal-grid"></div>
+</section>
+
+<section id="uniforms" class="page">
+  <div class="page-head"><div><span class="page-number">04</span><small>ROBLOX CLOTHING</small><h2>UNIFORMS</h2></div><p>SHIRT • PANTS • CATEGORY • DIVISION</p></div>
+  <div id="uniformContent" class="uniform-groups"></div>
+</section>
+
+<section id="search" class="page">
+  <div class="page-head"><div><span class="page-number">05</span><small>PERSONNEL DATABASE</small><h2>PLAYER SEARCH</h2></div><p>SEARCH • VERIFY • DATA • REQUIREMENTS</p></div>
+  <div class="search-box">
+    <div class="search-input-row">
+      <input id="playerSearchInput" placeholder="ENTER ROBLOX USERNAME..." autocomplete="off">
+      <button id="playerSearchButton" class="btn btn-red">SEARCH</button>
+    </div>
+    <div class="search-hint">If the player is not inside the configured Calvaroz group, the exact result will be <b>Player is not Calvarozian</b>.</div>
+  </div>
+  <div id="searchResult" class="search-result empty-result"><div class="result-placeholder">AWAITING PLAYER SEARCH</div></div>
+</section>
+
+<section id="blacklist" class="page">
+  <div class="page-head"><div><span class="page-number">06</span><small>RESTRICTED DATABASE</small><h2>BLACKLIST</h2></div><p>RESTRICTED • MANUAL RECORDS</p></div>
+  <div id="blacklistContent" class="blacklist-list"></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-line"></div>
+  <div class="footer-row">
+    <span id="footerName">CALVAROZ</span>
+    <span>ROBLOX COMMUNITY // 34922741</span>
+    <a id="groupLinkFooter" href="#" target="_blank" rel="noopener">OPEN GROUP →</a>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<a id="floatingGroupButton" class="floating-group" href="#" target="_blank" rel="noopener" aria-label="Open Calvaroz group">
+  <img src="assets/img/calvaroz-logo.png" alt="">
+  <span>GROUP</span>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
